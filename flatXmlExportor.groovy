@@ -119,7 +119,7 @@ def dataExport = {
                 (0..<r.getMetaData().columnCount).collect {
                     col -> map[r.getMetaData().getColumnName(col + 1)] = r[col]
                 }
-                "$table"(map) exo
+                "$table"(map) 
         }
     }
 }
